@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="510" viewBox="0 0 840 510">
+    <defs>
+        <rect id="19xhds8o1a" width="840" height="510" x="0" y="0" rx="20"/>
+        <mask id="reih1vgapb" width="840" height="510" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#19xhds8o1a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-120 -432) translate(120 432)">
+                <use fill="#FFF" stroke="#999" stroke-dasharray="11" stroke-width="8" mask="url(#reih1vgapb)" xlink:href="#19xhds8o1a"/>
+                <text fill="#999" font-family="NanumSquareB, NanumSquare" font-size="40" font-weight="bold" letter-spacing="-.667">
+                    <tspan x="308" y="352">카드정보 변경</tspan>
+                </text>
+                <path fill="#989898" d="M420 140c2.357 0 4.286 1.93 4.286 4.284v51.428l51.426.001c2.289 0 4.174 1.817 4.282 4.08L480 200c0 2.358-1.929 4.284-4.287 4.284h-51.426v51.43c0 2.357-1.929 4.286-4.287 4.286-2.355 0-4.287-1.929-4.287-4.287v-51.428l-51.426.002c-2.355 0-4.287-1.929-4.287-4.287 0-2.358 1.932-4.287 4.287-4.287h51.426v-51.429c0-2.285 1.82-4.17 4.08-4.279L420 140z"/>
+            </g>
+        </g>
+    </g>
+</svg>

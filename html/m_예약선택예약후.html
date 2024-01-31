@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+
+    <!-- Js -->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="select_reservation_after">
+
+        <header>
+            <h1 class="logo">
+                <a href="#">
+                    <span class="blind">메인화면바로가기</span>
+                </a>
+            </h1>
+        </header>
+
+        <main>
+            <section class="number_viewer_sb">
+                <span class="type">직행좌석</span>
+                <span class="num">7790(예약)</span>
+                <a href="#" role="button" class="setting">설정</a>
+            </section>
+            <section class="current_location">
+                <span class="title">현재위치</span>
+                <figure class="current_location_image"></figure>
+                <figure class="current_location_image_line"></figure>
+                <strong>경기 31바****<br>의왕신부곡IC(미정차)</strong>
+            </section>
+            <section class="bus_stop">
+                <span class="title">탑승정류장</span>
+                <figure class="bus_stop_image"></figure>
+                <strong>사당역</strong>
+            </section>
+            <section class="reservation_btn">
+                <span class="seats">좌석수 : 1석 </span>
+                <a href="#" role="button" class="reservation_go" onclick="openLayer('layer_popup2')">예약하기</a>
+            </section>
+        </main>
+
+        <aside>
+                <a href="" role="button" class="back">
+                    <span class="blind">뒤로가기</span>
+                </a>
+                <a href="" role="button" class="home">
+                    <span class="blind">메인화면바로가기</span>
+                </a>
+                <a href="" role="button" class="">
+                    <span class="blind"></span>
+                </a>
+        </aside>
+
+        <!--
+        레이어팝업 띄울 버튼에 onclick="openLayer('레이어ID명')"추가
+        레이어팝업 닫을 버튼에 onclick="closeLayer('레이어ID명')"추가
+        -->
+
+        <!-- 예약완료 레이어팝업 시작 -->
+        <div id="layer_popup1" class="layer_popup layer_background">
+
+            <div class="layer_content">
+
+                <div class="detail">
+                    <span class="logo"></span>
+                    <span class="bus">사당역 광역버스</span>
+                    <span class="num">7790번</span>
+                    <span class="info">(경기 31바****)</span>
+                    <strong class="bus_seats">1좌석</strong>
+                    <p>
+                        예약이<br><span class="complete">완료</span>되었습니다.
+                    </p>
+                </div>
+                <a href="" role="button" class="btn search"><span>예약 조회하기</span></a>
+                <a href="" role="button" class="btn number"><span>예약 카드번호</span></a>
+                <a href="" role="button" class="btn home"><span>처음 화면으로</span></a>
+            </div>
+
+        </div>
+        <!-- //예약완료 레이어팝업 끝 -->
+
+        <!-- 예약취소 레이어팝업 시작 -->
+        <div id="layer_popup2" class="layer_popup layer_background">
+
+            <div class="layer_content">
+
+                <div class="detail">
+                    <span class="logo"></span>
+                    <span class="bus">사당역 광역버스</span>
+                    <span class="num">7790번</span>
+                    <span class="info">(경기 31바****)</span>
+                    <strong class="bus_seats">1좌석</strong>
+                    <p>
+                        예약이<br><span class="cancle">취소</span>되었습니다.
+                    </p>
+                </div>
+                <a href="" role="button" class="btn done" onclick="closeLayer('layer_popup2')"><span>확인</span></a>
+            </div>
+
+        </div>
+        <!-- //예약취소 레이어팝업 끝 -->
+
+
+    </div>
+
+</body>
+</html>

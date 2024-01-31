@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+
+    <!-- Js -->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="customer_surveys">
+
+        <header class="select_card_top" >
+            <h1 style="font-size:4.5rem;">태그리스(Tagless) 결재 버스 이용자 만족도 조사</h1>
+        </header>
+
+        <main>
+
+            <section class="exp_text">
+                <p class="exp_text_p1">
+                    <span>경기도 버스 정책에 반영하기 위한 태그리스(Tagless) 결제 버스 이용자(1회 이상)를 대상으로 한 조사입니다. 많은 참여 부탁드립니다.</span><br>
+                    ※ 소정의 설문조사 답례품(모바일문화상품권 1만원권)이 제공됩니다.
+                </p>
+                <hr style="border:0; border-top:1px dashed #d9d9d9;">
+                <p class="exp_text_p2">
+                    주최 : 경기연구원, 로카모빌리티<br>
+                    문의(회신처) : 경기연구원 김서정(sj5502@gri.kr, 031-250-3124)
+                </p>
+            </section>
+
+            <section class="survey">
+
+                <form action="">
+                    <!-- Q 01 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>01. 버스의 이용 목적은 무엇입니까?</strong>
+                        </span>
+                        <ol class="survey_list set2">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-1" class="milky survey" name="list_1" value="0">
+                                    <label for="list_1-1">
+                                        <span></span>
+                                        출퇴근(외근포함)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-2" class="milky survey" name="list_1" value="0">
+                                    <label for="list_1-2">
+                                        <span></span>
+                                        등하교
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-3" class="milky survey" name="list_1" value="0">
+                                    <label for="list_1-3">
+                                        <span></span>
+                                        쇼핑
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-4" class="milky survey" name="list_1" value="0">
+                                    <label for="list_1-4">
+                                        <span></span>
+                                        여가활동
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-5" class="milky survey" name="list_1" value="0">
+                                    <label for="list_1-5">
+                                        <span></span>
+                                        회의·행사참석
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-6" class="milky survey" name="list_1" value="0">
+                                    <label for="list_1-6">
+                                        <span></span>
+                                        모임·친지방문
+                                    </label>
+                                </span>
+                            </li>
+                            <li style="display:flex; width:100%; align-items:center; justify-content:flex-start;">
+                                <span class="check_btn">
+                                    <input type="radio" id="list_1-7" class="milky survey" name="list_1" value="1">
+                                    <label for="list_1-7">
+                                        <span></span>
+                                        기타
+                                    </label>
+                                </span>
+                                <input type="text" class="radio_text" style="width:60%; margin-left:4.5rem; height:8rem; font-size:3.8rem; border:0; border:1px solid #e6e6e6; text-align:left; text-indent:2rem;" disabled>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 02 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>02. 일주일간 평균 며칠 버스를 이용하십니까?</strong>
+                        </span>
+                        <ol class="survey_list set2">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_2-1" class="milky survey" name="list_2">
+                                    <label for="list_2-1">
+                                        <span></span>
+                                        1~2일
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_2-2" class="milky survey" name="list_2">
+                                    <label for="list_2-2">
+                                        <span></span>
+                                        3~4일
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_2-3" class="milky survey" name="list_2">
+                                    <label for="list_2-3">
+                                        <span></span>
+                                        5일
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_2-4" class="milky survey" name="list_2">
+                                    <label for="list_2-4">
+                                        <span></span>
+                                        매일
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 03 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>03. 태그리스 결재는 얼마나 자주 이용하십니까?</strong>
+                        </span>
+                        <ol class="survey_list set2">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_3-1" class="milky survey" name="list_3">
+                                    <label for="list_3-1">
+                                        <span></span>
+                                        매일
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_3-2" class="milky survey" name="list_3">
+                                    <label for="list_3-2">
+                                        <span></span>
+                                        주 3~4회
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_3-3" class="milky survey" name="list_3">
+                                    <label for="list_3-3">
+                                        <span></span>
+                                        주 1~2회
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_3-4" class="milky survey" name="list_3">
+                                    <label for="list_3-4">
+                                        <span></span>
+                                        한번 사용 후 사용 안함
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 04 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>04. 태그리스 결재는 어떤 경로를 통해 알게 되셨습니까?</strong>
+                        </span>
+                        <ol class="survey_list set2">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_4-1" class="milky survey" name="list_4">
+                                    <label for="list_4-1">
+                                        <span></span>
+                                        언론보도
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_4-2" class="milky survey" name="list_4">
+                                    <label for="list_4-2">
+                                        <span></span>
+                                        인터넷(포털/SNS등)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_4-3" class="milky survey" name="list_4">
+                                    <label for="list_4-3">
+                                        <span></span>
+                                        G-Bus TV, 정류장 안내문
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_4-4" class="milky survey" name="list_4">
+                                    <label for="list_4-4">
+                                        <span></span>
+                                        타 이용 APP내 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_4-5" class="milky survey" name="list_4">
+                                    <label for="list_4-5">
+                                        <span></span>
+                                        지인추천
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 05 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>05. 태그리스 결재를 이용하기 이전에 결재 수단은 무엇입니까?</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_5-1" class="milky survey" name="list_5">
+                                    <label for="list_5-1">
+                                        <span></span>
+                                        현금
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_5-2" class="milky survey" name="list_5">
+                                    <label for="list_5-2">
+                                        <span></span>
+                                        후불교통카드(신용카드 겸용)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_5-3" class="milky survey" name="list_5">
+                                    <label for="list_5-3">
+                                        <span></span>
+                                        선불교통카드(티머니, 캐시비 등)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_5-4" class="milky survey" name="list_5">
+                                    <label for="list_5-4">
+                                        <span></span>
+                                        모바일페이류(삼성페이, LG페이, 모바일티머니 등)
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 06 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>06. 태그리스 결재의 이용이유를 모두 선택해 주세요(중복 선택 가능).</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_6-1" class="milky survey" name="list_6">
+                                    <label for="list_6-1">
+                                        <span></span>
+                                        빠른 승하차
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_6-2" class="milky survey" name="list_6">
+                                    <label for="list_6-2">
+                                        <span></span>
+                                        현금, 교통카드 소지 불필요
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_6-3" class="milky survey" name="list_6">
+                                    <label for="list_6-3">
+                                        <span></span>
+                                        손의 자유로움(승하차 태그 등 불필요, 짐이 있는 경우 등)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_6-4" class="milky survey" name="list_6">
+                                    <label for="list_6-4">
+                                        <span></span>
+                                        차내 코로나19 감염 예방 효과
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_6-5" class="milky survey" name="list_6">
+                                    <label for="list_6-5">
+                                        <span></span>
+                                        카드 태그 시 발생하는 차내 안전사고 예방
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_6-6" class="milky survey" name="list_6">
+                                    <label for="list_6-6">
+                                        <span></span>
+                                        하차 미태그 시 불이익 방지
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 07 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>07. 태그리스 결재에 대해 전반적으로 어느 정도 만족하십니까?</strong>
+                        </span>
+
+                        <table class="survey_07">
+                            <colgroup>
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                            </colgroup>
+                            <tr>
+                                <th scope="col" colspan="2">매우불만족</th>
+                                <th scope="col" colspan="2">불만족</th>
+                                <th scope="col" colspan="2">보통</th>
+                                <th scope="col" colspan="2">만족</th>
+                                <th scope="col" colspan="2">매우만족</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-1" class="milky survey" name="list_7">
+                                        <label for="list_7-1">
+                                            1
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-2" class="milky survey" name="list_7">
+                                        <label for="list_7-2">
+                                            2
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-3" class="milky survey" name="list_7">
+                                        <label for="list_7-3">
+                                            3
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-4" class="milky survey" name="list_7">
+                                        <label for="list_7-4">
+                                            4
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-5" class="milky survey" name="list_7">
+                                        <label for="list_7-5">
+                                            5
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-6" class="milky survey" name="list_7">
+                                        <label for="list_7-6">
+                                            6
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-7" class="milky survey" name="list_7">
+                                        <label for="list_7-7">
+                                            7
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-8" class="milky survey" name="list_7">
+                                        <label for="list_7-8">
+                                            8
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-9" class="milky survey" name="list_7">
+                                        <label for="list_7-9">
+                                            9
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check_btn">
+                                        <input type="radio" id="list_7-10" class="milky survey" name="list_7">
+                                        <label for="list_7-10">
+                                            10
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </article>
+                    <!-- Q 08 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>08. 향후 다른 결재 수단이 생겨도 태그리스 결재를 계속 이용하시겠습니까?</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_8-1" class="milky survey" name="list_8">
+                                    <label for="list_8-1">
+                                        <span></span>
+                                        확실히 이용할 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_8-2" class="milky survey" name="list_8">
+                                    <label for="list_8-2">
+                                        <span></span>
+                                        아마도 이용할 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_8-3" class="milky survey" name="list_8">
+                                    <label for="list_8-3">
+                                        <span></span>
+                                        아마도 이용하지 않을 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_8-4" class="milky survey" name="list_8">
+                                    <label for="list_8-4">
+                                        <span></span>
+                                        확실히 이용하지 않을 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_8-5" class="milky survey" name="list_8">
+                                    <label for="list_8-5">
+                                        <span></span>
+                                        잘 모르겠다
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 09 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>09. 향후 시내버스 태그리스 결재가 확대되면 지인에게 추천하시겠습니까?</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_9-1" class="milky survey" name="list_9">
+                                    <label for="list_9-1">
+                                        <span></span>
+                                        확실히 추천할 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_9-2" class="milky survey" name="list_9">
+                                    <label for="list_9-2">
+                                        <span></span>
+                                        아마도 추천할 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_9-3" class="milky survey" name="list_9">
+                                    <label for="list_9-3">
+                                        <span></span>
+                                        아마도 추천하지 않을 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_9-4" class="milky survey" name="list_9">
+                                    <label for="list_9-4">
+                                        <span></span>
+                                        확실히 추천하지 않을 것이다
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_9-5" class="milky survey" name="list_9">
+                                    <label for="list_9-5">
+                                        <span></span>
+                                        잘 모르겠다
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 10 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>10. 태그리스 결재의 불편한 사항을 모두 선택해 주세요(중복 선택 가능).</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-1" class="milky survey" name="list_10">
+                                    <label for="list_10-1">
+                                        <span></span>
+                                        결재 확인의 지연
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-2" class="milky survey" name="list_10">
+                                    <label for="list_10-2">
+                                        <span></span>
+                                        결제 여부 확인의 어려움
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-3" class="milky survey" name="list_10">
+                                    <label for="list_10-3">
+                                        <span></span>
+                                        환승 시 환승할인요금 적용에 대한 불안감
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-4" class="milky survey" name="list_10">
+                                    <label for="list_10-4">
+                                        <span></span>
+                                        결재 오류에 대한 불안감
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-5" class="milky survey" name="list_10">
+                                    <label for="list_10-5">
+                                        <span></span>
+                                        결재 오류 시 조치 방법에 대한 안내 부족
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-6" class="milky survey" name="list_10">
+                                    <label for="list_10-6">
+                                        <span></span>
+                                        핸드폰에서 NFC 상시 활성화 따른 배터리 부족
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-7" class="milky survey" name="list_10">
+                                    <label for="list_10-7">
+                                        <span></span>
+                                        핸드폰 해킹에 대한 불안감
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_10-8" class="milky survey" name="list_10">
+                                    <label for="list_10-8">
+                                        <span></span>
+                                        버스 기사와 요금지불에 관한 마찰 우려
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 11 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>11. 태그리스 결재 어플의 개선 사항을 모두 선택해 주세요(중복선택 가능).</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_11-1" class="milky survey" name="list_11">
+                                    <label for="list_11-1">
+                                        <span></span>
+                                        다른 어플과 충돌
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_11-2" class="milky survey" name="list_11">
+                                    <label for="list_11-2">
+                                        <span></span>
+                                        어플 실행, 작동 속도
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_11-3" class="milky survey" name="list_11">
+                                    <label for="list_11-3">
+                                        <span></span>
+                                        어플의 시인성 부족(화면 배치, 폰트, 아이콘 크기 등)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_11-4" class="milky survey" name="list_11">
+                                    <label for="list_11-4">
+                                        <span></span>
+                                        다양한 버스이용정보 제공(노선도, 노선정보, 현재 위치, 길찾기 등)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_11-5" class="milky survey" name="list_11">
+                                    <label for="list_11-5">
+                                        <span></span>
+                                        다양한 부가서비스 확대 제공(하차벨(기제공), 목적지 접근 시 알림 등)
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 12 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>12. 태그리스 결재 홍보방안에 대해 선택해 주세요(중복 선택 가능).</strong>
+                        </span>
+                        <ol class="survey_list set1">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-1" class="milky survey" name="list_12">
+                                    <label for="list_12-1">
+                                        <span></span>
+                                        신문 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-2" class="milky survey" name="list_12">
+                                    <label for="list_12-2">
+                                        <span></span>
+                                        공중파/케이블TV 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-3" class="milky survey" name="list_12">
+                                    <label for="list_12-3">
+                                        <span></span>
+                                        타 어플(App) 내 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-4" class="milky survey" name="list_12">
+                                    <label for="list_12-4">
+                                        <span></span>
+                                        소셜미디어(유튜브 등) 영상 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-5" class="milky survey" name="list_12">
+                                    <label for="list_12-5">
+                                        <span></span>
+                                        인터넷 포털(다음, 네이버 등) 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-6" class="milky survey" name="list_12">
+                                    <label for="list_12-6">
+                                        <span></span>
+                                        구글을 통한 타 인터넷 홈페이지 내 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-7" class="milky survey" name="list_12">
+                                    <label for="list_12-7">
+                                        <span></span>
+                                        버스 외부 광고
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-8" class="milky survey" name="list_12">
+                                    <label for="list_12-8">
+                                        <span></span>
+                                        버스 정류장 안내문(광고)
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="checkbox" id="list_12-9" class="milky survey" name="list_12">
+                                    <label for="list_12-9">
+                                        <span></span>
+                                        버스 차내 및 GBUS TV 광고
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 13 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>※ 휴대폰 제조사 및 기종을 선택(기재)해 주세요.</strong>
+                        </span>
+                        <ol class="survey_list set2">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_13-1" class="milky survey" name="list_13">
+                                    <label for="list_13-1">
+                                        <span></span>
+                                        제조사 : 삼성
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_13-2" class="milky survey" name="list_13">
+                                    <label for="list_13-2">
+                                        <span></span>
+                                        제조사 : LG
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_13-3" class="milky survey" name="list_13">
+                                    <label for="list_13-3">
+                                        <span></span>
+                                        제조사 : 애플
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_13-4" class="milky survey" name="list_13">
+                                    <label for="list_13-4">
+                                        <span></span>
+                                        제조사 : 기타
+                                    </label>
+                                </span>
+                            </li>
+                            <li style="display:flex; width:100%; align-items:center; justify-content:flex-start; font-size:4rem;">
+                                기종
+                                <input type="text" style="width:60%; margin-left:4.5rem; height:8rem; font-size:3.8rem; border:0; border:1px solid #e6e6e6; text-align:left; text-indent:2rem;">
+                            </li>
+                        </ol>
+                    </article>
+                    <!-- Q 14 -->
+                    <article class="survey_box">
+                        <span class="survey_title">
+                            <strong>※ 설문조사 답례품 발송을 위한 가입 시 제공한 개인정보활용에 동의하십니까?</strong>
+                        </span>
+                        <ol class="survey_list set2">
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_14-1" class="milky survey" name="list_14">
+                                    <label for="list_14-1">
+                                        <span></span>
+                                        동의함
+                                    </label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="check_btn">
+                                    <input type="radio" id="list_14-2" class="milky survey" name="list_14">
+                                    <label for="list_14-2">
+                                        <span></span>
+                                        동의하지 않음
+                                    </label>
+                                </span>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <div class="btn_area_de btn1">
+                        <a href="" role="button" class="blue">제출하기</a>
+                    </div>
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+<script>
+
+    //1번 항목 기타 선택시에만 활성화 되는 텍스트박스
+    $("input:radio[name=list_1]").click(function(){
+
+        if($("input:radio[name=list_1]:checked").val() == "1"){
+            $("input.radio_text").attr("disabled",false);
+
+        }else if($("input:radio[name=list_1]:checked").val() == "0"){
+            $("input.radio_text").attr("disabled",true);
+        }
+    });
+
+</script>
+
+</body>
+</html>

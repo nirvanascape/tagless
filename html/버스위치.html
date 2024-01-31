@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+
+    <!-- Js -->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="bus_location">
+
+        <header>
+            <h1 class="logo">
+                <a href="#">
+                    <span class="blind">메인화면바로가기</span>
+                </a>
+            </h1>
+        </header>
+
+        <main>
+
+            <section class="number_viewer">
+                <div class="div">
+                    <span class="type">직행좌석</span>
+                    <span class="num">7790</span>
+                    <span class="way">과천,서울,수원,과천,서울,수원</span>
+                </div>
+
+            </section>
+
+            <div class="direc">
+                <span>
+                    <strong>사당역(중) 방면</strong>
+                    <span>(서울)</span>
+                </span>
+                <span>
+                    <strong>협성대정문 방면</strong>
+                    <span>(화성)</span>
+                </span>
+            </div>
+
+            <section class="bus_line">
+
+                <ul class="route">
+
+                    <li class="blue stop b1s">
+                        <!-- 버스 갯수 변경 : 한대의 버스 <li class="b1s">, 두대이상의 버스 <li class="b2s"> 추가 -->
+                        <!-- 버스 이미지 위치 변경 : 버스 정차시 <li class="stop">, 전역 이동시 <li class="ing_before">, 다음역 이동시 <li class="ing"> 추가 -->
+                        <!-- 노선 라인 색 변경 : 파란라인 시 <li class="blue">, 빨간라인 시 <li class="red"> 추가 -->
+                        <span class="line"></span>
+                        <!-- 정차역 부분 시작 -->
+                        <span class="stat stop">
+                            <strong>의왕톨게이트</strong>
+                            <span>27113</span>
+                            <span>의왕</span>
+                        </span>
+                        <!--// 정차역 부분 끝 -->
+                        <!-- 버스 이미지 위치 변경 추가되는 부분 시작 -->
+                        <span class="info">
+                            <span class="num">
+                                <strong>125분</strong>
+                                1244
+                            </span>
+                            <span class="seat">30석</span>
+                            <!-- 예약가능 -->
+                            <a href="#" role="button" class="btn capsule_green">예약</a>
+                            <!-- 두대이상 예약 -->
+                            <!-- <a href="#" role="button" class="btn capsule_blue">예약</a> -->
+                            <!-- 만석 -->
+                            <!-- <a href="#" role="button" class="btn capsule_orange">만석</a> -->
+                        </span>
+                        <!--// 버스 이미지 위치 변경 추가되는 부분 끝 -->
+                    </li>
+
+                    <li class="red ing b2s">
+                        <span class="line"></span>
+                        <!-- 미정차역 부분 시작 -->
+                        <span class="stat">
+                            <strong>호매실IC(미정차)</strong>
+                            수원
+                        </span>
+                        <!--// 미정차역 부분 끝 -->
+                        <!-- 버스 이미지 위치 변경 추가되는 부분 시작 -->
+                        <span class="info">
+                            <span class="num">
+                                <strong>125분</strong>
+                                1244
+                            </span>
+                            <span class="seat">30석</span>
+                            <a href="#" role="button" class="btn capsule_blue" onclick="openLayer('b2s_layer_popup')">예약</a>
+                        </span>
+                        <!--// 버스 이미지 위치 변경 추가되는 부분 끝 -->
+                    </li>
+
+                    <li class="red ing b1s">
+                        <span class="line"></span>
+                        <span class="stat stop">
+                            <strong>의왕톨게이트</strong>
+                            <span>27113</span>
+                            <span>의왕</span>
+                        </span>
+                        <!-- 버스 이미지 위치 변경 추가되는 부분 시작 -->
+                        <span class="info">
+                            <span class="num">
+                                <strong>125분</strong>
+                                1244
+                            </span>
+                            <span class="seat">30석</span>
+                            <a href="#" role="button" class="btn capsule_orange">만석</a>
+                        </span>
+                        <!--// 버스 이미지 위치 변경 추가되는 부분 끝 -->
+                    </li>
+
+                    <li class="red">
+                        <span class="line"></span>
+                        <span class="stat">
+                            <strong>호매실IC(미정차)</strong>
+                            수원
+                        </span>
+                    </li>
+
+                    <li class="red">
+                        <span class="line"></span>
+                        <span class="stat">
+                            <strong>호매실IC(미정차)</strong>
+                            수원
+                        </span>
+                    </li>
+
+                    <li class="red">
+                        <span class="line"></span>
+                        <span class="stat">
+                            <strong>호매실IC(미정차)</strong>
+                            수원
+                        </span>
+                    </li>
+
+                    <li class="red">
+                        <span class="line"></span>
+                        <span class="stat">
+                            <strong>호매실IC(미정차)</strong>
+                            수원
+                        </span>
+                    </li>
+
+                    <li class="red">
+                        <span class="line"></span>
+                        <span class="stat">
+                            <strong>호매실IC(미정차)</strong>
+                            수원
+                        </span>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+        <aside>
+                <a href="" role="button" class="back">
+                    <span class="blind">뒤로가기</span>
+                </a>
+                <a href="" role="button" class="home">
+                    <span class="blind">메인화면바로가기</span>
+                </a>
+                <a href="" role="button" class="">
+                    <span class="blind"></span>
+                </a>
+        </aside>
+
+        <button type="button" class="refresh">
+            <span class="blind">화면새로고침</span>
+        </button>
+
+    </div>
+
+    <!--
+    레이어팝업 띄울 버튼에 onclick="openLayer('레이어ID명')"추가
+    레이어팝업 닫을 버튼에 onclick="closeLayer('레이어ID명')"추가
+    -->
+
+    <!-- 두대 이상 예약 팝업 시작-->
+
+    <div id="b2s_layer_popup" class="layer_popup layer_background b2s_layer_popup">
+
+        <div class="layer_content">
+
+            <strong class="title">Tagless 앱 연결</strong>
+            <ul class="b2s_list">
+                <li>
+                    <p>
+                        <span>· 예측시간 : 약 110분 후 도착</span>
+                        <span>· 예약가능 좌석 : 30석</span>
+                        <span>· 노선번호 : 7790</span>
+                        <span>· 차량번호 : 경기79바1234</span>
+                    </p>
+                    <!-- 예약가능 -->
+                    <a href="#" role="button" class="capsule_green">예약</a>
+                    <!-- 두대이상 예약 -->
+                    <!-- <a href="#" role="button" class="capsule_blue">예약</a> -->
+                    <!-- 만석 -->
+                    <!-- <a href="#" role="button" class="capsule_orange">만석</a> -->
+                </li>
+                <li>
+                    <p>
+                        <span>· 예측시간 : 약 110분 후 도착</span>
+                        <span>· 예약가능 좌석 : 30석</span>
+                        <span>· 노선번호 : 7790</span>
+                        <span>· 차량번호 : 경기79바1234</span>
+                    </p>
+                    <a href="#" role="button" class="capsule_orange">만석</a>
+                </li>
+                <li>
+                    <p>
+                        <span>· 예측시간 : 약 110분 후 도착</span>
+                        <span>· 예약가능 좌석 : 30석</span>
+                        <span>· 노선번호 : 7790</span>
+                        <span>· 차량번호 : 경기79바1234</span>
+                    </p>
+                    <a href="#" role="button" class="capsule_green">예약</a>
+                </li>
+            </ul>
+            <button type="button" class="b2s_layer_btn" onclick="closeLayer('b2s_layer_popup')">취소</button>
+        </div>
+
+    </div>
+
+    <!-- //두대 이상 예약 팝업 끝 -->
+
+</body>
+</html>
